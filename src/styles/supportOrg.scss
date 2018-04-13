@@ -1,0 +1,34 @@
+.supportOrg {
+    background-color: #f6f6f6;
+    width: 100%;
+    display: flex;
+    align-items: center;
+    padding: 10px 5px;
+    &__title {
+        color: #ffffff;
+        font-size: 17px;
+        background-color: #bd2917;
+        padding: 5px 15px;
+        margin: 0 5px;
+        width: auto;
+        text-align: center;
+    }
+    &__disc{
+        color: #000000;
+        font-size: 14px;
+        font-weight: bold;
+        line-height: 18px;
+        text-transform: uppercase;
+        margin-left: 10px;
+    }
+}
+
+@media (max-width: 425px) {
+    .supportOrg {
+        flex-wrap: wrap;
+        &__title {
+            width: 100%;
+            margin-bottom: 10px;
+        }
+    }
+}

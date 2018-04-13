@@ -1,0 +1,95 @@
+.fot {
+    background-color: #2f606e;
+    padding-bottom: 0;
+}
+.footer {
+    border-bottom: 5px solid #ee3b24;
+    display: flex;
+    align-items: center;
+    &__info {
+        display: flex;
+        flex-direction: column;
+        color:white;
+        justify-content: space-around;
+        color: #ffffff;
+        font-family: Roboto;
+        font-size: 12px;
+        font-weight: 400;
+        padding-left: 60px;
+        .contact__block {
+            display: flex;
+            padding: 10px 0;
+            justify-content: space-between;
+            .text {
+                width: 60%;
+                .title {
+                    padding: 5px 0;
+                }
+            }
+            .icon {
+                font-size: 22px;
+                a {
+                    color:white;
+                    padding: 0 12px;
+                    &:hover {
+                        color: #ee3b24;
+                    }
+                }
+            }
+        }
+        .contact__blockb {
+            width: 85%;
+            padding: 10px 0;
+            position: relative;
+            img {
+                position: absolute;
+                bottom: 0;
+                right: -65px;
+            }
+        }
+    }
+    &__logo {
+        width: 100%;
+        img {
+            width: 100%;
+        }
+    }
+}
+@media (max-width: 768px) {
+    .footer {
+        flex-wrap: wrap;
+        &__logo {
+            width: 50%;
+            padding-left: 60px;
+        }
+    }
+}
+@media (max-width: 500px) {
+    .footer {
+        &__logo {
+            padding-left: 0px;
+            margin: 0 auto;
+        }
+        &__info {
+            flex-direction: column;
+            padding-left: 0px;
+            text-align: center;
+            .contact__block {
+                flex-direction: column;
+                .text {
+                    width: 100%;
+                    padding: 5px 5px;
+                }
+                .icon {
+                    padding: 15px 0;
+                }
+            }
+            .contact__blockb {
+                width: 100%;
+                img {
+                    display: none;
+                }
+            }
+        }
+    }
+}

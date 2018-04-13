@@ -1,0 +1,107 @@
+.newsBig {
+    img {
+        width: 100%;
+        padding: 10px 0;
+    }
+    &__head {
+        position: relative;
+        color: white;
+        img{
+            width: 100%;
+            padding: 0px;
+        }
+        .newsBig__title {
+            position: absolute;
+            top: 0;
+            width: 100%;
+            color: #ffffff;
+            font-family: Roman ;
+            font-size: 30px;
+            font-weight: bold;
+            text-transform: uppercase;
+            padding-top: 5%;
+            letter-spacing: 2px;
+            text-align: center;
+        }
+        .newsBig__mask {
+            position: absolute;
+            width: 100%;
+            height: 100%;
+            background-color: red;
+            top: 0;
+            opacity: 0.5;
+        } 
+        .newsBig__date {
+            position: absolute;
+            bottom: 20%;
+            color: #ffffff;
+            font-size: 19px;
+            font-weight: bold;
+            text-align: center;
+            width: 100%;
+        }
+        .newsBig__autor {
+            position: absolute;
+            bottom: 10%;
+            color: #ffffff;
+            font-size: 18px;
+            font-weight: bold;
+            width: 100%;
+            text-align: center;
+        }
+    }
+    &__text {
+        color: #000000;
+        font-size: 21px;
+        padding: 15px 0;
+    }
+}
+@media (max-width: 768px) {
+    .newsBig {
+        img {
+        }
+        &__head {
+            img{
+            }
+            .newsBig__title {
+                font-size: 28px;
+            }
+            .newsBig__date {
+                font-size: 16px;
+            }
+            .newsBig__autor {
+                font-size: 16px;
+            }
+        }
+    }
+}
+@media (max-width: 600px) {
+    .newsBig {
+        img {
+        }
+        &__head {
+            img{
+            }
+            .newsBig__title {
+                position: relative;
+                color:black;
+            }
+            .newsBig__date {
+                font-size: 16px;
+                position: relative;
+                color:black;
+                left: 0;
+                
+            }
+            .newsBig__autor {
+                font-size: 16px;
+                position: relative;
+                color:black;
+                left: 0;
+            }
+            .newsBig__mask {
+                opacity: 0;
+            }
+        }
+    }
+}
